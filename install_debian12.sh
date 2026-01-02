@@ -65,7 +65,19 @@ if [ -f "/root/share/rpcgen" ]; then
     dos2unix /root/share/rpcgen
 fi
 
-# 6. Build
+# 6. Prepare Output Directories
+echo -e "${GREEN}[+] Creating Output Directories in /home...${NC}"
+mkdir -p /home/gamed
+mkdir -p /home/gfactiond
+mkdir -p /home/gauthd
+mkdir -p /home/uniquenamed
+mkdir -p /home/gamedbd
+mkdir -p /home/gdeliveryd
+mkdir -p /home/glinkd
+mkdir -p /home/gacd
+mkdir -p /home/logservice
+
+# 7. Build
 echo -e "${GREEN}[+] Starting Build Process...${NC}"
 # Use standard build script
 ./build.sh all
