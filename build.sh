@@ -284,6 +284,8 @@ builddeliver() # Ç°¸úrpcgen
 	make clean
 	make -j32
 	cd ..
+	
+	cd ..
 }
 
 builddeliveryd()

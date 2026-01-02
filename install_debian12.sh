@@ -27,7 +27,8 @@ apt-get install -y git
 # Note: libmysqlclient-dev is replaced by libmariadb-dev-compat on Debian 12
 apt-get install -y build-essential cmake gcc g++ make \
     libxml2-dev libssl-dev libpcre3-dev zlib1g-dev \
-    libmariadb-dev-compat libmariadb-dev libreadline-dev
+    libmariadb-dev-compat libmariadb-dev libreadline-dev \
+    ant default-jdk
 
 # 3. Clone Repository
 REPO_DIR="/root/176source"
@@ -55,10 +56,11 @@ fi
 
 # 5. Fix Permissions
 chmod +x build.sh
+chmod +x cnet/rpcgen
 
 # 6. Build
 echo -e "${GREEN}[+] Starting Build Process...${NC}"
 # Use standard build script
-./build.sh
+./build.sh all
 
 echo -e "${GREEN}[+] Setup and Build Finished!${NC}"
