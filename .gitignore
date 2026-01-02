@@ -35,7 +35,9 @@ dump_*
 core
 
 # Perfect World Specific
-gs
+# gs (Removed to allow cgame/gs directory)
+cgame/gs/gs
+
 gamedbd
 gdeliveryd
 glinkd
