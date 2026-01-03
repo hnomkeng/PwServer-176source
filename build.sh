@@ -1,7 +1,7 @@
 #!/bin/bash
-GS=`echo *game`;
-NET=`echo *net`;
-SKILL=`echo *skill`;
+GS=cgame;
+NET=cnet;
+SKILL=cskill;
 echo ""
 echo "=========================== setup $NET ==========================="
 echo ""
@@ -47,13 +47,13 @@ ln -s ../../$NET/gamed/webtradesyslib.h
 ln -s ../../$NET/gamed/kingelectionsyslib.h
 ln -s ../../$NET/gamed/pshopsyslib.h
 ln -s ../../$NET/gdbclient/db_os.h
-ln -s /root/share/io/luabase.h
+ln -s ~/share/io/luabase.h
 
 cd ..
 rm lib*
 ln -s ../$NET/io/libgsio.a
 ln -s ../$NET/gdbclient/libdbCli.a
-ln -s /root/cskill/skill/libskill.a
+ln -s ../../$SKILL/skill/libskill.a
 ln -s ../$NET/gamed/libgsPro2.a
 ln -s ../$NET/logclient/liblogCli.a
 cd ..
