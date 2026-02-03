@@ -1,0 +1,19 @@
+#!/bin/sh
+
+chmod 700 -R /root/def_apt/
+cd /root/def_apt/;
+
+strip --strip-debug gauthd_protected
+upx -6 -q -o gauthd gauthd_protected
+strip --strip-debug gamedbd_protected
+upx -6 -q -o gamedbd gamedbd_protected
+strip --strip-debug gdeliveryd_protected
+upx -6 -q -o gdeliveryd gdeliveryd_protected
+strip --strip-debug gfactiond_protected
+upx -6 -q -o gfactiond gfactiond_protected
+strip --strip-debug glinkd_protected
+upx -6 -q -o glinkd glinkd_protected
+strip --strip-debug gs_protected
+upx -6 -q -o gs gs_protected
+strip --strip-debug uniquenamed_protected
+upx -6 -q -o uniquenamed uniquenamed_protected
