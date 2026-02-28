@@ -56,10 +56,10 @@ fi
 # The build script expects 'share' in directory above or home (~/share)
 echo -e "${GREEN}[+] Configuring Directory Structure...${NC}"
 
-if [ -d "share" ]; then
-    echo -e "${GREEN}[+] Moving 'share' directory to /root/share as expected by build.sh...${NC}"
+if [ -d "shareCskill" ]; then
+    echo -e "${GREEN}[+] Moving 'shareCskill' directory to /root/share as expected by build.sh...${NC}"
     rm -rf /root/share
-    cp -r share /root/
+    cp -r shareCskill /root/share
 fi
 
 # 5. Fix Permissions and Line Endings
