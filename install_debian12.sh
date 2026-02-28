@@ -23,7 +23,7 @@ apt-get install -y --no-install-recommends build-essential cmake gcc g++ make \
 
 # 3. Clone Repository
 REPO_DIR="/root/176source"
-REPO_URL="https://github.com/code-bynary/176source.git"
+REPO_URL="https://github.com/hnomkeng/PwServer-176source.git"
 
 if [ -d "$REPO_DIR" ]; then
     echo -e "${YELLOW}[!] Directory $REPO_DIR already exists. Pulling latest changes...${NC}"
